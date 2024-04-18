@@ -68,10 +68,10 @@ namespace Groups {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Mistral", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
 			this->label1->Location = System::Drawing::Point(12, 43);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(296, 29);
+			this->label1->Size = System::Drawing::Size(277, 35);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Введите номер группы: ";
 			// 
@@ -85,35 +85,43 @@ namespace Groups {
 			// resultLabel
 			// 
 			this->resultLabel->AutoSize = true;
+			this->resultLabel->Font = (gcnew System::Drawing::Font(L"Mistral", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
 			this->resultLabel->Location = System::Drawing::Point(108, 129);
 			this->resultLabel->Name = L"resultLabel";
-			this->resultLabel->Size = System::Drawing::Size(0, 17);
+			this->resultLabel->Size = System::Drawing::Size(0, 16);
 			this->resultLabel->TabIndex = 2;
 			// 
 			// showButton
 			// 
+			this->showButton->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
+			this->showButton->Font = (gcnew System::Drawing::Font(L"Mistral", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->showButton->Location = System::Drawing::Point(235, 84);
 			this->showButton->Name = L"showButton";
-			this->showButton->Size = System::Drawing::Size(81, 38);
+			this->showButton->Size = System::Drawing::Size(91, 38);
 			this->showButton->TabIndex = 3;
-			this->showButton->Text = L"Показать";
-			this->showButton->UseVisualStyleBackColor = true;
+			this->showButton->Text = L"Поиск";
+			this->showButton->UseVisualStyleBackColor = false;
 			this->showButton->Click += gcnew System::EventHandler(this, &QueryForm::showButton_Click);
 			// 
 			// button1
 			// 
-			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12));
+			this->button1->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Mistral", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->button1->Location = System::Drawing::Point(78, 378);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(151, 38);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Показать";
-			this->button1->UseVisualStyleBackColor = true;
+			this->button1->UseVisualStyleBackColor = false;
 			// 
 			// QueryForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::Info;
 			this->ClientSize = System::Drawing::Size(328, 428);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->showButton);

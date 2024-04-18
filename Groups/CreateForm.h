@@ -70,10 +70,10 @@ namespace Groups {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label1->Font = (gcnew System::Drawing::Font(L"Mistral", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
 			this->label1->Location = System::Drawing::Point(74, 28);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(208, 31);
+			this->label1->Size = System::Drawing::Size(184, 35);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Номер группы: ";
 			// 
@@ -94,10 +94,11 @@ namespace Groups {
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label2->Font = (gcnew System::Drawing::Font(L"Mistral", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->label2->Location = System::Drawing::Point(128, 132);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(83, 31);
+			this->label2->Size = System::Drawing::Size(75, 35);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Имя: ";
 			// 
@@ -111,39 +112,44 @@ namespace Groups {
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16));
+			this->label3->Font = (gcnew System::Drawing::Font(L"Mistral", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->label3->Location = System::Drawing::Point(100, 236);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(146, 31);
+			this->label3->Size = System::Drawing::Size(129, 35);
 			this->label3->TabIndex = 4;
 			this->label3->Text = L"Фамилия: ";
 			// 
 			// enterButton
 			// 
-			this->enterButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15));
+			this->enterButton->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
+			this->enterButton->Font = (gcnew System::Drawing::Font(L"Mistral", 16.2F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->enterButton->Location = System::Drawing::Point(98, 332);
 			this->enterButton->Name = L"enterButton";
 			this->enterButton->Size = System::Drawing::Size(148, 42);
 			this->enterButton->TabIndex = 6;
 			this->enterButton->Text = L"Ввод";
-			this->enterButton->UseVisualStyleBackColor = true;
+			this->enterButton->UseVisualStyleBackColor = false;
 			this->enterButton->Click += gcnew System::EventHandler(this, &CreateForm::enterButton_Click);
 			// 
 			// showButton
 			// 
-			this->showButton->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15));
+			this->showButton->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
+			this->showButton->Font = (gcnew System::Drawing::Font(L"Mistral", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
 			this->showButton->Location = System::Drawing::Point(98, 400);
 			this->showButton->Name = L"showButton";
 			this->showButton->Size = System::Drawing::Size(148, 42);
 			this->showButton->TabIndex = 7;
 			this->showButton->Text = L"Показать";
-			this->showButton->UseVisualStyleBackColor = true;
+			this->showButton->UseVisualStyleBackColor = false;
 			this->showButton->Click += gcnew System::EventHandler(this, &CreateForm::showButton_Click);
 			// 
 			// CreateForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::Info;
 			this->ClientSize = System::Drawing::Size(364, 477);
 			this->Controls->Add(this->showButton);
 			this->Controls->Add(this->enterButton);
