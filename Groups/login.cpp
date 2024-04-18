@@ -16,7 +16,7 @@ void registerUser(string login, string password)
 		fstream readFile;
 		readFile.open("users.txt", ios::in);
 		bool isUserExists{};
-		if (readFile.is_open())
+		/*if (readFile.is_open())
 		{
 			string currString;
 			while (getline(file, currString))
@@ -27,7 +27,7 @@ void registerUser(string login, string password)
 					break;
 				};
 			}
-		}
+		}*/
 
 		if (!isUserExists)
 		{

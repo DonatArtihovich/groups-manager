@@ -1,4 +1,5 @@
 #include "QueryForm.h"
+#include "CreateForm.h"
 #include <msclr/marshal_cppstd.h>
 #include <string>
 #include <fstream>
@@ -20,4 +21,11 @@ System::Void Groups::QueryForm::showButton_Click(System::Object^ sender, System:
 			this->resultLabel->Text += marshal_as<String^>(currStr + "\r\n");
 		}
 	}
+}
+
+System::Void Groups::QueryForm::enterButton_Click(System::Object^ sender, System::EventArgs^ e)
+{
+	CreateForm^ createForm{ gcnew CreateForm() };
+	this->Hide();
+	createForm->Show();
 }

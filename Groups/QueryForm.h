@@ -42,7 +42,8 @@ namespace Groups {
 
 
 	private: System::Windows::Forms::Button^ showButton;
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ enterButton;
+
 
 
 	private:
@@ -62,7 +63,7 @@ namespace Groups {
 			this->groupNumberInput = (gcnew System::Windows::Forms::TextBox());
 			this->resultLabel = (gcnew System::Windows::Forms::Label());
 			this->showButton = (gcnew System::Windows::Forms::Button());
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->enterButton = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -85,11 +86,10 @@ namespace Groups {
 			// resultLabel
 			// 
 			this->resultLabel->AutoSize = true;
-			this->resultLabel->Font = (gcnew System::Drawing::Font(L"Mistral", 7.8F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
+			this->resultLabel->Font = (gcnew System::Drawing::Font(L"Mistral", 14, System::Drawing::FontStyle::Bold));
 			this->resultLabel->Location = System::Drawing::Point(108, 129);
 			this->resultLabel->Name = L"resultLabel";
-			this->resultLabel->Size = System::Drawing::Size(0, 16);
+			this->resultLabel->Size = System::Drawing::Size(0, 29);
 			this->resultLabel->TabIndex = 2;
 			// 
 			// showButton
@@ -105,17 +105,17 @@ namespace Groups {
 			this->showButton->UseVisualStyleBackColor = false;
 			this->showButton->Click += gcnew System::EventHandler(this, &QueryForm::showButton_Click);
 			// 
-			// button1
+			// enterButton
 			// 
-			this->button1->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Mistral", 12, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(78, 378);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(151, 38);
-			this->button1->TabIndex = 4;
-			this->button1->Text = L"Показать";
-			this->button1->UseVisualStyleBackColor = false;
+			this->enterButton->BackColor = System::Drawing::SystemColors::GradientInactiveCaption;
+			this->enterButton->Font = (gcnew System::Drawing::Font(L"Mistral", 16, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic))));
+			this->enterButton->Location = System::Drawing::Point(78, 378);
+			this->enterButton->Name = L"enterButton";
+			this->enterButton->Size = System::Drawing::Size(151, 38);
+			this->enterButton->TabIndex = 4;
+			this->enterButton->Text = L"Ввод";
+			this->enterButton->UseVisualStyleBackColor = false;
+			this->enterButton->Click += gcnew System::EventHandler(this, &QueryForm::enterButton_Click);
 			// 
 			// QueryForm
 			// 
@@ -123,7 +123,7 @@ namespace Groups {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Info;
 			this->ClientSize = System::Drawing::Size(328, 428);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->enterButton);
 			this->Controls->Add(this->showButton);
 			this->Controls->Add(this->resultLabel);
 			this->Controls->Add(this->groupNumberInput);
@@ -137,5 +137,6 @@ namespace Groups {
 #pragma endregion
 
 	private: System::Void showButton_Click(System::Object^ sender, System::EventArgs^ e);
-	};
+	private: System::Void enterButton_Click(System::Object^ sender, System::EventArgs^ e);
+};
 }
