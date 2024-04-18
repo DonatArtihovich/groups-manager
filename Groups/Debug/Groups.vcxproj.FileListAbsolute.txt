@@ -1,0 +1,5 @@
+C:\Users\artih\source\repos\Groups\Groups\Debug\Groups.vcxproj.AssemblyReference.cache
+C:\Users\artih\source\repos\Groups\Groups\Debug\Groups.MyForm.resources
+C:\Users\artih\source\repos\Groups\Groups\Debug\Groups.vcxproj.GenerateResource.cache
+C:\Users\artih\source\repos\Groups\Groups\Debug\Groups.CreateForm.resources
+C:\Users\artih\source\repos\Groups\Groups\Debug\Groups.QueryForm.resources

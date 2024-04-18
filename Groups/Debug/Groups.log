@@ -1,0 +1,8 @@
+﻿  MyForm.cpp
+  QueryForm.cpp
+  enter-handlers.cpp
+  login-handlers.cpp
+  show-handlers.cpp
+  Создание кода...
+  CreateForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  Groups.vcxproj -> C:\Users\artih\source\repos\Groups\Debug\Groups.exe
