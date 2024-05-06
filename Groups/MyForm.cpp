@@ -1,5 +1,4 @@
 #include "MyForm.h"
-#include "QueryForm.h"
 #include <Windows.h>
 
 using namespace Groups;
